@@ -72,11 +72,7 @@ export default [
 	typeScriptRuleset,
 	{
 		files: ['**/*{ts,mts,cts,tsx}'],
-		rules: { 'jsdoc/no-undefined-types': 0 },
-	},
-	{
-		files: [`packages/docgen/**/*${commonFiles}`],
-		rules: { 'import/extensions': 0 },
+		rules: { 'import/extensions': 0, 'jsdoc/no-undefined-types': 0 },
 	},
 	{
 		files: [`packages/rest/**/*${commonFiles}`],
@@ -92,7 +88,6 @@ export default [
 	{
 		files: [`packages/voice/**/*${commonFiles}`],
 		rules: {
-			'import/extensions': 0,
 			'no-restricted-globals': 0,
 		},
 	},
